@@ -26,13 +26,6 @@ fun main() {
     val precioConDescuento = comanda.getPrecioComanda(10)
     println("Precio total con descuento del 10%: $precioConDescuento")
 
-    // Mostrar el precio total con un descuento del 20%
-    val precioConDescuento20 = comanda.getPrecioComanda(20)
-    println("Precio total con descuento del 20%: $precioConDescuento20")
-
-    // Mostrar el precio total con un descuento del 30%
-    val precioConDescuento30 = comanda.getPrecioComanda(30)
-    println("Precio total con descuento del 30%: $precioConDescuento30")
 }
 
 
