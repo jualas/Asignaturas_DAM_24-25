@@ -1,0 +1,52 @@
+/* Estilo para el fondo del BorderPane
+   Cambia el color de fondo del BorderPane principal a un gris claro */
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Estilo para la etiqueta Título (Label)
+   Ajusta el tamaño de fuente y el color del texto de la etiqueta de título */
+.label {
+    -fx-font-weight: bold; /* Texto en negrita */
+    -fx-font-size: 25px; /* Tamaño de la fuente */
+    -fx-text-fill: #333333; /* Color del texto */
+}
+
+/* Estilo para las etiquetas de usuario y contraseña
+   Ajusta el tamaño de fuente y el color del texto sin negrita */
+.usuarioLabel, .contrasenaLabel {
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+    -fx-text-fill: #333333; /* Color del texto */
+}
+
+/* Estilo para los campos de texto (TextField y PasswordField)
+   Define el color de fondo, el color del borde, el radio del borde y el relleno interno */
+.text-field, .password-field {
+    -fx-background-color: #ffffff; /* Color de fondo blanco */
+    -fx-border-color: #cccccc; /* Color del borde gris claro */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-padding: 5px; /* Espaciado interno */
+}
+
+/* Estilo para el botón (Button)
+   Define el color de fondo, el color del texto, el peso de la fuente, el radio del borde y el relleno */
+.button {
+    -fx-background-color: #4CAF50; /* Color de fondo verde */
+    -fx-text-fill: white; /* Color del texto blanco */
+    -fx-font-weight: bold; /* Texto en negrita */
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Estilo para el botón al pasar el ratón (hover)
+   Cambia el color de fondo cuando el ratón está sobre el botón */
+.button:hover {
+    -fx-background-color: #45a049; /* Color de fondo verde más oscuro */
+}
+
+/* Estilo para el texto de mensaje (Text)
+   Ajusta el tamaño de fuente y el color del texto para los mensajes */
+.text {
+    -fx-font-size: 12px; /* Tamaño de la fuente */
+    -fx-text-fill: #ff0000; /* Color del texto rojo */
+}

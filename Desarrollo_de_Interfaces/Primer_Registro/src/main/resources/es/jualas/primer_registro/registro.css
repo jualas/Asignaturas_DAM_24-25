@@ -1,0 +1,26 @@
+
+#encabezadoLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+#usuarioLabel, #contrasenaLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: #34495e;
+}
+
+.loginErroneo{
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 20px;
+}
+
+.loginCorrecto{
+    -fx-text-fill: #2ecc71;
+    -fx-font-size: 20px;
+}
+
+.campoTextoRojo{
+    -fx-border-width: 2px;
+    -fx-border-color: #e74c3c;
+}
