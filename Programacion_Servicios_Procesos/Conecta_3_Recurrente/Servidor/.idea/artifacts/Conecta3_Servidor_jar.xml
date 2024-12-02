@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Conecta3_Servidor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Conecta3_Servidor_jar</output-path>
+    <root id="archive" name="Conecta3_Servidor.jar">
+      <element id="module-output" name="Conecta3_Servidor" />
+    </root>
+  </artifact>
+</component>
