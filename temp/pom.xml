@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion> <!-- Versión del modelo POM -->
+
+    <groupId>es.jualas</groupId> <!-- Identificador del grupo del proyecto -->
+    <artifactId>Emisor</artifactId> <!-- Identificador del artefacto del proyecto -->
+    <version>1.0-SNAPSHOT</version> <!-- Versión del proyecto -->
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source> <!-- Versión del compilador de origen -->
+        <maven.compiler.target>21</maven.compiler.target> <!-- Versión del compilador de destino -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- Codificación de origen del proyecto -->
+    </properties>
+</project>

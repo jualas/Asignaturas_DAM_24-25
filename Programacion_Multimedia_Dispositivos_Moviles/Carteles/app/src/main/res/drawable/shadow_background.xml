@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sombra -->
+    <item android:left="6dp" android:top="6dp" android:right="0dp" android:bottom="0dp">
+        <shape android:shape="oval">
+            <size android:width="130dp" android:height="130dp" /> <!-- Tamaño de la sombra -->
+            <solid android:color="#70000000" /> <!-- Color de la sombra con opacidad -->
+        </shape>
+    </item>
 
-</selector>
+
+</layer-list>

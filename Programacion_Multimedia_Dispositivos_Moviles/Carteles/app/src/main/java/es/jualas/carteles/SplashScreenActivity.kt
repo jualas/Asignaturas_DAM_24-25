@@ -1,4 +1,4 @@
-package com.example.ut4_ead
+package es.jualas.carteles
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.splash_screen)
+        setContentView(R.layout.activity_splash_screen)
 
         // Mostrar el SplashScreen por 3 segundos antes de redirigir al MainActivity
         navigateToMainActivityWithDelay()
@@ -18,7 +18,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun navigateToMainActivityWithDelay() {
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish() // Finaliza el SplashScreen para evitar que el usuario regrese a él
         }, 3000) // 3000 ms = 3 segundos
     }

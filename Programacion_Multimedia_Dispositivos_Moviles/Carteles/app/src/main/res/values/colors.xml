@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colores para el tema oscuro -->
+    <color name="md_theme_dark_primary">#212121</color>
+    <color name="md_theme_dark_onPrimary">#FAFAFA</color>
+    <color name="md_theme_dark_secondary">#757575</color>
+    <color name="md_theme_dark_background">#424242</color>
+    <color name="md_theme_dark_surface">#616161</color>
+    <color name="md_theme_dark_onSurface">#E0E0E0</color>
+    <!-- Colores para el tema claro -->
+    <color name="md_theme_light_primary">#FAFAFA</color>
+    <color name="md_theme_light_onPrimary">#212121</color>
+    <color name="md_theme_light_secondary">#BDBDBD</color>
+    <color name="md_theme_light_background">#F5F5F5</color>
+    <color name="md_theme_light_surface">#EEEEEE</color>
+    <color name="md_theme_light_onSurface">#616161</color>
 </resources>

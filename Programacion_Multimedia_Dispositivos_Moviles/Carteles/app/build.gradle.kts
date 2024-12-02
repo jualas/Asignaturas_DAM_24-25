@@ -3,9 +3,14 @@ plugins {
     alias(libs.plugins.kotlin.android)
 }
 
+
 android {
     namespace = "es.jualas.carteles"
-    compileSdk = 34
+    compileSdk = 35
+
+    viewBinding {
+        enable = true
+    }
 
     defaultConfig {
         applicationId = "es.jualas.carteles"
@@ -39,6 +44,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation ("com.google.android.material:material:1.8.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

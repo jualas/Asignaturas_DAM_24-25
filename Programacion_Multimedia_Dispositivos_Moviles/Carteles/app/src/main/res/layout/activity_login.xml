@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainLayout"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_theme_light_background"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.043" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTextText"
+        android:id="@+id/usernameInputLayout"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="250dp"
@@ -44,7 +44,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/passwordInputLayout"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="@string/contraseña"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInputLayout"
         app:layout_constraintVertical_bias="0.020000000">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -63,7 +63,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-    android:id="@+id/button2"
+    android:id="@+id/forgotPasswordButton"
     style="@style/TextAppearance.MaterialComponents.Button"
     android:layout_width="190dp"
     android:layout_height="60dp"
@@ -76,10 +76,11 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.816"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/button1"/>
+    app:layout_constraintTop_toTopOf="@+id/registerButton"
+    android:contentDescription="@string/btn2_description"/>
 
 <com.google.android.material.button.MaterialButton
-    android:id="@+id/button1"
+    android:id="@+id/registerButton"
     style="@style/TextAppearance.MaterialComponents.Button"
     android:layout_width="105dp"
     android:layout_height="60dp"
@@ -90,14 +91,14 @@
     android:textSize="12sp"
     app:cornerRadius="0dp"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/button2"
+    app:layout_constraintEnd_toStartOf="@+id/forgotPasswordButton"
     app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+    app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout"
     app:layout_constraintVertical_bias="0.024"/>
 
     <Button
-        android:id="@+id/sign_in_button"
+        android:id="@+id/signGoogle"
         android:layout_width="299dp"
         android:layout_height="70dp"
         android:backgroundTint="#FFFFFF"
@@ -127,7 +128,7 @@
         app:layout_constraintVertical_bias="0.73" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/loginButton"
         android:layout_width="299dp"
         android:layout_height="70dp"
         android:backgroundTint="#4CAF50"

@@ -1,7 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Carteles" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorPrimaryVariant">@color/md_theme_dark_onPrimary</item>
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="android:textColorPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="android:textColorSecondary">@color/md_theme_dark_onSurface</item>
+    </style>
+
+    <style name="Theme.Carteles" parent="Base.Theme.Carteles"/>
+
+    <!-- Define a style for the Toolbar -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:titleTextColor">@android:color/white</item>
     </style>
 </resources>
