@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="8dp">
+
+    <ImageView
+            android:id="@+id/imagePoster"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo" />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+        <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título de la película"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/textYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Año: 1950" />
+
+        <TextView
+                android:id="@+id/textCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: Excelente" />
+
+        <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio estimado: $500" />
+    </LinearLayout>
+</LinearLayout>

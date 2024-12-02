@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_light_secondary">
+
+    <!-- Contenedor del logo y contenido -->
+
+    <FrameLayout
+            android:layout_width="383dp"
+            android:layout_height="559dp"
+            android:id="@+id/frameLayout3"
+            android:layout_marginTop="8dp"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_frame_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.76"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.304">
+
+        <!-- Contenido principal -->
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="16dp">
+
+                <!-- Nombre de la App -->
+                <TextView
+                        android:id="@+id/contactName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/app_name"/>
+
+                <!-- Botón de Teléfono -->
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:id="@+id/callIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:contentDescription="Call"
+                            android:src="@drawable/baseline_call_24"
+                            android:layout_alignParentTop="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="62585"
+                            android:paddingStart="16dp"
+                            android:textSize="18sp"
+                            android:layout_toEndOf="@id/callIcon"
+                            android:layout_alignParentTop="true"/>
+
+                    <!-- Línea inferior -->
+                    <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/md_theme_light_onSurface"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <!-- Botón de Email -->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingVertical="8dp">
+
+                    <ImageView
+                            android:id="@+id/emailIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:contentDescription="Email"
+                            android:src="@drawable/baseline_alternate_email_24"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_email"
+                            android:paddingStart="16dp"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+
+                <!-- Botón de Mapa -->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingVertical="8dp">
+
+                    <ImageView
+                            android:id="@+id/mapIcon"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:contentDescription="Map"
+                            android:src="@drawable/baseline_add_location_24"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_address"
+                            android:paddingStart="16dp"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+
+                <!-- Imagen del Mapa -->
+                <ImageView
+                        android:id="@+id/mapImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/maps"
+                        android:contentDescription="Map Screenshot"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="147dp"
+            android:layout_height="163dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo"
+            android:elevation="1dp"
+            android:background="@drawable/shadow_background"
+            android:layout_gravity="top|center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
