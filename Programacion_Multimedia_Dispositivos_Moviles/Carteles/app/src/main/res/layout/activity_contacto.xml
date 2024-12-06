@@ -71,7 +71,7 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="62585"
+                        android:text="@string/contact_phone"
                         android:paddingStart="16dp"
                         android:textSize="18sp"/>
             </LinearLayout>
@@ -125,6 +125,33 @@
                         android:paddingStart="16dp"
                         android:textSize="18sp"/>
             </LinearLayout>
+
+                        <View style="@style/Divider"/>
+
+            <!-- Botón de WhatsApp -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp">
+
+                <ImageView
+                        android:id="@+id/whatsappIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="WhatsApp"
+                        android:src="@drawable/whatsapp_negro"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abrir_whatsapp"
+                        android:paddingStart="16dp"
+                        android:textSize="18sp"/>
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
 
             <View style="@style/Divider"/>
 

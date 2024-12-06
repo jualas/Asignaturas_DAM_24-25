@@ -11,10 +11,10 @@
     <string name="custom_sign_in_text">Sign In with Google</string>
     <string name="facebook_app_id">Sign In with Facebook</string>
     <string name="contact_name">Posters</string>
-    <string name="contact_phone">62585</string>
+    <string name="contact_phone">629470302</string>
     <string name="contact_email">jualas@jualas.es</string>
     <string name="contact_address">Princesa Street, 1, 28008 Madrid</string>
-    <string name="abrir_whatsapp">Open WhatsApp</string>
+    <string name="abrir_whatsapp">Contact for WhatsApp</string>
     <string name="toolbar_title">Posters App</string>
     <string name="logo_description">Company Logo</string>
 </resources>

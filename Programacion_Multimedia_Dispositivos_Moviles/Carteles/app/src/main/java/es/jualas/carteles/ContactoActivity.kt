@@ -35,7 +35,7 @@ class ContactoActivity : AppCompatActivity() {
         binding.mapIcon.setOnClickListener { checkLocationPermissionAndOpenMap() }
 
         // Añadir un nuevo botón para WhatsApp en tu layout y configurar su listener aquí
-        // binding.whatsappIcon.setOnClickListener { openWhatsApp() }
+       binding.whatsappIcon?.setOnClickListener { openWhatsApp() }
     }
 
     private fun checkCallPermissionAndMakeCall() {
@@ -47,7 +47,7 @@ class ContactoActivity : AppCompatActivity() {
     }
 
     private fun makePhoneCall() {
-        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:62585"))
+        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:${getString(R.string.contact_phone)}"))
         startActivity(intent)
     }
 
@@ -75,10 +75,15 @@ class ContactoActivity : AppCompatActivity() {
 
     // Función para abrir WhatsApp (necesitarás añadir un botón para esto en tu layout)
     private fun openWhatsApp() {
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse("https://api.whatsapp.com/send?phone=NUMERODETELEFONO")
+    val phoneNumber = getString(R.string.contact_phone)
+    val intent = Intent(Intent.ACTION_VIEW)
+    intent.data = Uri.parse("https://api.whatsapp.com/send?phone=$phoneNumber")
+    try {
         startActivity(intent)
+    } catch (e: Exception) {
+        Toast.makeText(this, "WhatsApp no está instalado en este dispositivo", Toast.LENGTH_SHORT).show()
     }
+}
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)

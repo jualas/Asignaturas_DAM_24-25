@@ -12,10 +12,10 @@
     <string name="custom_sign_in_text">Iniciar sesión con Google</string>
     <string name="facebook_app_id">Iniciar Sesión con Facebook</string>
     <string name="contact_name">Carteles</string>
-    <string name="contact_phone">62585</string>
+    <string name="contact_phone">629470302</string>
     <string name="contact_email">jualas@jualas.es</string>
     <string name="contact_address">Calle de la Princesa, 1, 28008 Madrid</string>
-    <string name="abrir_whatsapp">Abrir WhatsApp</string>
+    <string name="abrir_whatsapp">Contactar por WhatsApp</string>
     <string name="toolbar_title">Carteles App</string>
     <string name="logo_description">Logotipo de la Empresa</string>
 </resources>
