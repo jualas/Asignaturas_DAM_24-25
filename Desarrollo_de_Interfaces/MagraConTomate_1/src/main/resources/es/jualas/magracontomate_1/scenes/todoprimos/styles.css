@@ -1,0 +1,50 @@
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-pref-height: 30px; /* Altura fija */
+    -fx-pref-width: 100px;  /* Ancho fijo */
+    -fx-background-color: linear-gradient(to bottom, #f0f0f0, #d0d0d0); /* Fondo degradado */
+    -fx-border-color: #a0a0a0; /* Color del borde */
+    -fx-border-width: 1px; /* Ancho del borde */
+    -fx-border-radius: 6px; /* Radio del borde */
+    -fx-background-radius: 6px; /* Radio del fondo */
+    -fx-text-fill: #000000; /* Color del texto */
+    -fx-font-size: 12px; /* Tamaño de fuente ajustado */
+    -fx-padding: 5 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1); /* Sombra */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e0e0e0, #b0b0b0); /* Fondo degradado al pasar el ratón */
+}
+
+.text-field {
+    -fx-pref-width: 100px;  /* Ancho preferido */
+    -fx-pref-height: 30px;  /* Altura preferida */
+    -fx-max-width: 100px;   /* Ancho máximo */
+    -fx-min-width: 100px;   /* Ancho mínimo */
+}
+
+.number-label {
+    -fx-padding: 10px;  /* Añade un espacio interno */
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-alignment: center;
+    -fx-pref-width: 50px;  /* Ancho fijo del cuadrado */
+    -fx-pref-height: 50px;  /* Altura fija del cuadrado */
+    -fx-alignment: center;  /* Centrar el texto */
+    -fx-font-size: 16px;  /* Tamaño de fuente */
+}
+.tile-pane {
+    -fx-pref-width: 380px; /* Ancho preferido */
+    -fx-pref-height: 243px; /* Altura preferida */
+    -fx-hgap: 5px; /* Espaciado horizontal */
+    -fx-vgap: 5px; /* Espaciado vertical */
+}
