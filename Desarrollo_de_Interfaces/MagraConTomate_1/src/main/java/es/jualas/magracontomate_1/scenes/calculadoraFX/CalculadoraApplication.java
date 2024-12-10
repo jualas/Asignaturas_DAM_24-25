@@ -43,4 +43,3 @@ public class CalculadoraApplication extends Application {
         System.out.println("Aplicación de calculadora cerrándose.");
     }
 }
-}

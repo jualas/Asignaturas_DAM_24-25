@@ -3,6 +3,10 @@ package es.jualas.magracontomate_1;
 import javafx.application.Application;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.collections.ObservableList;
+import java.lang.Override;
+import java.lang.String;
+import java.lang.System;
 
 public class RefritoMAgraConTomateApplication extends Application {
 
