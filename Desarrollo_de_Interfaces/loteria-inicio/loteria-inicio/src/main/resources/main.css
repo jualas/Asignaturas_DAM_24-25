@@ -1,0 +1,15 @@
+.campNumber {
+    -fx-font-size: 25px; /* Tamaño de fuente */
+    -fx-font-weight: bold; /* Negrita */
+    -fx-background-color: white; /* Color de fondo */
+    -fx-border-color: #3d65b5; /* Color del borde */
+    -fx-border-width: 2px;  /* Ancho del borde */
+    -fx-min-width: 45px; /* Ancho mínimo */
+    -fx-min-height: 45px; /* Altura mínima */
+    -fx-text-alignment: center; /* Alineación del texto */
+}
+.fondoHBox {
+    -fx-background-color: white; /* Color de fondo */
+    -fx-padding: 5px; /* Añade un espacio interno */
+    -fx-spacing: 5px; /* Espaciado entre nodos */
+}

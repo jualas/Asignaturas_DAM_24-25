@@ -3,7 +3,6 @@ package es.jualas.magracontomate_1;
 import javafx.application.Application;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import javafx.collections.ObservableList;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.System;
@@ -62,14 +61,19 @@ public class RefritoMAgraConTomateApplication extends Application {
     }
 
     private void initializeControllers(SceneManager sceneManager) {
+        // Define los nombres de las escenas que necesitan inicialización
         String[] sceneNames = {"main", "login", "calculadora", "todoPrimos"};
         for (String sceneName : sceneNames) {
             try {
+                // Obtiene el controlador de la escena actual
                 Object controller = sceneManager.getController(sceneName);
+                // Verifica si el controlador implementa la interfaz SceneManagerAware
                 if (controller instanceof SceneManagerAware) {
+                    // Asigna el SceneManager al controlador
                     ((SceneManagerAware) controller).setSceneManager(sceneManager);
                 }
             } catch (Exception e) {
+                // Maneja cualquier error que ocurra durante la inicialización del controlador
                 System.err.println("Error al inicializar el controlador para la escena " + sceneName + ": " + e.getMessage());
             }
         }

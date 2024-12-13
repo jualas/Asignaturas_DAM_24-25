@@ -1,0 +1,11 @@
+# Carpetas de configuración de IntelliJ
+.idea/
+*.iml
+
+# Carpetas de compilación
+out/
+build/
+
+# Archivos temporales
+*.class
+*.log

@@ -1,0 +1,13 @@
+Crear 5 nods  de tipo text en la vista y situalos en los huecos de los 5 numeros del decimo. Crea un estilo con numeros grandes
+, Fondo blanco y borde azul Se vinculara a los nodos tex
+
+El textfield inputBoleto debe impedir escribir letras y no debe permitir escribir m de 5 números
+
+
+Se intenta escribir una letra aparecra un Alert indicando que noo se permite escribir leraas. Si se intenta escribir mas de 5 numeros se mostrara otro alert indicando que no se puede escribir mas de 5 numeros
+
+El boton geenerar boloeto permanecera deshabilitado hasta ue no se escriban 5 digitoss
+
+
+ Al pulsar el boton generar boleto se cogera el numero y se escribira en los nodos tipo text del apatado 3
+ el boton  de cerrar cerrrará la aplicacion

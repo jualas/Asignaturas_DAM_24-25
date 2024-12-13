@@ -1,0 +1,35 @@
+Utilizando semaforos vamos a implementar un gimnasio de nueva apertura. Al gimnasio van a ir ese dia 6 clientes normales y 3 deportistas de elite. el funcionamiento del gimnasio es el siguiente:
+
+* Todos los clientes y deportistas de elite tienen que pasar por la sala de registro. En esta sala unicamente pueden atendeerles de uno en uno. El tiempo de resgistro es un tiempo aleatorio de 1 a 3 segundos.
+* Una vez registrados pasan a la sala de maquinas. En esa sala de maquinas pueden entrar hasta 3 clientes. Sin embargo, el deportista de elite solo entrra a la sala de maquinas cuando no hay otro cliente, quiere disponer de la misma para el solo para sus entrenamientos. el tiempo que pasan los clientes en la sala de maquinas es de 2 segundos.
+* Observa que mientras hay un cliente en la sala de registro, en la sala de maquinas pueden haber clientes haciendo ejercicio.
+*El control a la sala de registro y la de maquinas debe hacerse mediante la clase Semahore de Java.
+ * Al salir de ultimo cliente, se imprimeun mensaje de "Gimnasio cerrrado". Esto se implementa mediante CyclicBarrier.
+
+ Forma de lazar los clientes.
+ LAnza primeero un deportista de elite, a continuacion los clientes y finalmente los dos deportistas de elite que quedan
+
+ Mensajes a imprimir por pantalla:
+
+ --> Messi: ENTRA en la sala de REGISTRO
+ Lanzo Cliente0
+ Lanzo Cliente1
+ Lanzo Cliente2
+ Lanzo Cliente3
+ Lanzo Cliente4
+ Lanzo Cliente5
+ Lanzo Usain Bolt
+ Lanzo Simone Biles
+ -->Messi: sale de la sala de REGISTRO
+    Messi: ENTRA en la sala de MAQUINAS
+  -->Cliente1: ENTRA en la sala de REGISTRO
+    -->Cliente1: sale de la sala de REGISTRO
+    -->Cliente0: ENTRA en la sala de REGISTRO
+    -->Messi: sale de la sala de MAQUINAS
+    -->Cliente1: ENTRA en la sala de MAQUINAS
+    -->Cliente0: sale de la sala de REGISTRO
+    -->Cliente0: sale de la sala de MAQUIAS
+
+    Puntuacion:
+    * Creacion de hilos e implementacion de semaforos: 3.5 punto
+    *Clase CyclicBarrier: 1,5 punto
