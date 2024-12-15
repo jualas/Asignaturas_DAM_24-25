@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Carteles" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/md_theme_light_primary</item>
-        <item name="colorPrimaryVariant">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryVariant">@color/md_theme_light_primary_variant</item>
         <item name="colorSecondary">@color/md_theme_light_secondary</item>
         <item name="android:colorBackground">@color/md_theme_light_background</item>
         <item name="colorSurface">@color/md_theme_light_surface</item>
         <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
-        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="materialButtonStyle">@style/Button.Primary</item>
         <item name="android:textColorPrimary">@color/md_theme_light_onPrimary</item>
         <item name="android:textColorSecondary">@color/md_theme_light_onSurface</item>
     </style>
@@ -20,5 +19,15 @@
     <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
         <item name="android:background">?attr/colorPrimary</item>
         <item name="android:titleTextColor">@android:color/white</item>
+    </style>
+
+    <!-- SplashScreen theme for Android 12 and above -->
+    <style name="Theme.Carteles.SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <!-- SplashScreen theme for versions below Android 12 -->
+    <style name="Theme.Carteles.SplashScreen.Legacy" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_legacy</item>
     </style>
 </resources>

@@ -10,16 +10,24 @@ class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
 
-        // Mostrar el SplashScreen por 3 segundos antes de redirigir al MainActivity
-        navigateToMainActivityWithDelay()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            // En Android 12 o superior, se recomienda usar el nuevo sistema SplashScreen API
+            setTheme(R.style.Theme_Carteles)
+            navigateToNextActivity()
+        } else {
+            // Para versiones anteriores, muestra el SplashScreen tradicional
+            setContentView(R.layout.activity_splash_screen)
+            Handler(Looper.getMainLooper()).postDelayed({
+                navigateToNextActivity()
+            }, 3000) // 3 segundos
+        }
     }
 
-    private fun navigateToMainActivityWithDelay() {
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish() // Finaliza el SplashScreen para evitar que el usuario regrese a él
-        }, 3000) // 3000 ms = 3 segundos
+    private fun navigateToNextActivity() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
+}
 }

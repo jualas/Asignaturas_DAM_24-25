@@ -14,4 +14,8 @@
     <color name="md_theme_light_background">#F5F5F5</color>
     <color name="md_theme_light_surface">#EEEEEE</color>
     <color name="md_theme_light_onSurface">#616161</color>
+
+    <color name="md_theme_light_primary_variant">#E0E0E0</color>
+    <color name="md_theme_dark_primary_variant">#303030</color>
+
 </resources>
