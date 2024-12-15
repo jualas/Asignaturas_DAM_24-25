@@ -21,8 +21,13 @@
         <item name="android:titleTextColor">@android:color/white</item>
     </style>
 
-    <!-- SplashScreen theme -->
+    <!-- SplashScreen theme for Android 12 and above -->
     <style name="Theme.Carteles.SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <!-- SplashScreen theme for versions below Android 12 -->
+    <style name="Theme.Carteles.SplashScreen.Legacy" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@layout/activity_splash_screen</item>
     </style>
 </resources>
