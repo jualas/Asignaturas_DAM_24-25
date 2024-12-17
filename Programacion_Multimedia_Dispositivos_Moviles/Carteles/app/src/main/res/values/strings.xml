@@ -5,7 +5,7 @@
     <string name="logo_description">Company Logo</string>
 
     <!-- Login Activity strings -->
-    <!-- Login Activity -->
+
     <string name="btn1">Register</string>
     <string name="btn2">Forgot Password?</string>
     <string name="btn2_description">Recover Password</string>
@@ -17,7 +17,7 @@
     <string name="facebook_app_id">Sign In with Facebook</string>
 
     <!-- Contact Activity strings -->
-    <!-- Contact Activity -->
+
     <string name="contact_name">Posters</string>
     <string name="contact_phone">629470302</string>
     <string name="contact_email">jualas@jualas.es</string>
@@ -25,7 +25,7 @@
     <string name="abrir_whatsapp">Contact for WhatsApp</string>
 
     <!-- Snackbar messages -->
-    <!-- Snackbar -->
+
     <string name="snackbar_text">Close</string>
     <string name="snackbar_register">Welcome</string>
     <string name="snackbar_forgot_password">Forgot Password</string>
@@ -35,12 +35,12 @@
     <string name="snackbar_google">Sign in with Google</string>
 
     <!-- Error messages -->
-    <!-- Errors -->
+
     <string name="username_empty_error">Username cannot be empty</string>
     <string name="password_empty_error">Password cannot be empty</string>
 
     <!-- Item View strings -->
-    <!-- Item View -->
+
     <string name="year">Year</string>
     <string name="condition">Condition</string>
     <string name="estimated_price">Estimated Price</string>
@@ -61,5 +61,6 @@
     <string name="movie_title_4">Movie D</string>
     <string name="movie_title_5">Movie E</string>
 
+    <!-- Movie Posters -->
     <string name="image_poster_description">Poster image</string>
 </resources>
