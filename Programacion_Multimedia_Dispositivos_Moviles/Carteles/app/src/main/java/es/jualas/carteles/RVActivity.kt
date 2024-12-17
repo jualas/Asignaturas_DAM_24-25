@@ -12,19 +12,19 @@ class RVActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rv)
 
+        // Configura la barra de herramientas
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.title = getString(R.string.toolbar_title)
 
+        // Configura el RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Lista de ejemplos de ítems de carteles de películas
-        val items = listOf(
-            Item("Película A", 1950, "70x100 cm", "Excelente", "Ilustrador A", "EE.UU.", 500.0),
-            Item("Película B", 1960, "60x90 cm", "Bueno", "Ilustrador B", "Reino Unido", 350.0)
-        )
+        // Obtiene la lista de elementos
+        val items = Item.getSampleItems(this)
 
+        // Configura el adaptador del RecyclerView
         val adapter = ItemAdapter(items)
         recyclerView.adapter = adapter
     }

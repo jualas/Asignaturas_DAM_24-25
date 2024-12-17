@@ -7,13 +7,12 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:theme="@style/ToolbarStyle"
-        android:title="@string/toolbar_title"
-        tools:title="@string/toolbar_title"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/ToolbarStyle"
+    android:title="@string/toolbar_title"
+    app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

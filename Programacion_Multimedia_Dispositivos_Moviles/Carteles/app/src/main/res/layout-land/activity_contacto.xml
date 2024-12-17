@@ -8,8 +8,8 @@
 
     <ImageView
             android:id="@+id/logoImageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/logo"
             android:contentDescription="Logo"
             android:elevation="4dp"
@@ -70,12 +70,12 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="62585"
+                        android:text="@string/contact_phone"
                         android:paddingStart="16dp"
                         android:textSize="18sp"/>
             </LinearLayout>
 
-            <View style="@style/Divider"/>
+
 
             <!-- Botón de Email -->
             <LinearLayout
@@ -100,7 +100,7 @@
                         android:textSize="18sp"/>
             </LinearLayout>
 
-            <View style="@style/Divider"/>
+
 
             <!-- Botón de Mapa -->
             <LinearLayout
@@ -125,16 +125,41 @@
                         android:textSize="18sp"/>
             </LinearLayout>
 
-            <View style="@style/Divider"/>
+
+
+            <!-- Botón de WhatsApp -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp">
+
+                <ImageView
+                        android:id="@+id/whatsappIcon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:contentDescription="WhatsApp"
+                        android:src="@drawable/whatsapp_negro"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abrir_whatsapp"
+                        android:paddingStart="16dp"
+                        android:textSize="18sp"/>
+            </LinearLayout>
+
+
 
             <!-- Imagen del Mapa -->
             <ImageView
                     android:id="@+id/mapImageView"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/maps"
                     android:contentDescription="Map Screenshot"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="5dp"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"/>
         </LinearLayout>

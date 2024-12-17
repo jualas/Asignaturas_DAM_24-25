@@ -35,7 +35,7 @@ class ContactoActivity : AppCompatActivity() {
         binding.mapIcon.setOnClickListener { checkLocationPermissionAndOpenMap() }
 
         // Añadir un nuevo botón para WhatsApp en tu layout y configurar su listener aquí
-       binding.whatsappIcon?.setOnClickListener { openWhatsApp() }
+        binding.whatsappIcon.setOnClickListener { openWhatsApp() }
     }
 
     private fun checkCallPermissionAndMakeCall() {

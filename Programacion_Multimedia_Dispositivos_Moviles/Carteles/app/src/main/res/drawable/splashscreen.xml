@@ -1,9 +1,12 @@
-
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/md_theme_light_background" />
     <item>
-        <bitmap
-            android:gravity="center"
-            android:src="@drawable/logo" />
+        <inset>
+            <bitmap
+                android:gravity="center"
+                android:src="@drawable/splashlogo"
+
+            />
+        </inset>
     </item>
 </layer-list>

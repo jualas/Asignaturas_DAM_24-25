@@ -1,101 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rootLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/md_theme_light_background"
-    tools:context=".LoginActivity"
-    tools:ignore="ExtraText">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_light_background"
+        tools:context=".LoginActivity"
+        tools:ignore="ExtraText">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imageView"
-        android:layout_width="192dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="192dp"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+            android:id="@+id/imageView"
+            android:layout_width="192dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="192dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usernameInputLayout"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="250dp"
-        android:hint="@string/usuario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.1">
+            android:id="@+id/usernameInputLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="250dp"
+            android:hint="@string/usuario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                android:id="@+id/usernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passwordInputLayout"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/contraseña"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameInputLayout"
-        app:layout_constraintVertical_bias="0.020000000">
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contraseña"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameInputLayout"
+            app:layout_constraintVertical_bias="0.020000000">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:textColorHint="#616161" />
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColorHint="#616161" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-    android:id="@+id/forgotPasswordButton"
-    style="@style/TextAppearance.MaterialComponents.Button"
-    android:layout_width="190dp"
-    android:layout_height="60dp"
-    android:layout_marginEnd="20dp"
-    android:layout_weight="2"
-    android:text="@string/btn2"
-    android:singleLine="true"
-    android:textSize="10sp"
-    app:cornerRadius="0dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.816"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/registerButton"
-    android:contentDescription="@string/btn2_description"/>
+        android:id="@+id/forgotPasswordButton"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="2"
+        android:text="@string/btn2"
+        android:singleLine="true"
+        android:textSize="10sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerButton"
+        android:contentDescription="@string/btn2_description"/>
 
-<com.google.android.material.button.MaterialButton
-    android:id="@+id/registerButton"
-    style="@style/TextAppearance.MaterialComponents.Button"
-    android:layout_width="105dp"
-    android:layout_height="60dp"
-    android:layout_marginEnd="5dp"
-    android:layout_weight="1"
-    android:text="@string/btn1"
-    android:singleLine="true"
-    android:textSize="12sp"
-    app:cornerRadius="0dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/forgotPasswordButton"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout"
-    app:layout_constraintVertical_bias="0.024"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButton"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:text="@string/btn1"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forgotPasswordButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout"
+        app:layout_constraintVertical_bias="0.024"/>
 
     <Button
         android:id="@+id/signGoogle"
@@ -140,5 +142,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.616" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,20 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><resources>
+<resources>
+    <!-- General strings -->
     <string name="app_name">Posters</string>
+    <string name="toolbar_title">Posters App</string>
+    <string name="logo_description">Company Logo</string>
+
+    <!-- Login Activity strings -->
+    <!-- Login Activity -->
     <string name="btn1">Register</string>
     <string name="btn2">Forgot Password?</string>
     <string name="btn2_description">Recover Password</string>
-    <string name="snackbar_text">Close</string>
     <string name="usuario">User</string>
     <string name="contraseña">Password</string>
     <string name="login">Log In</string>
     <string name="googleSignInButton">Sign In with Google</string>
     <string name="custom_sign_in_text">Sign In with Google</string>
     <string name="facebook_app_id">Sign In with Facebook</string>
+
+    <!-- Contact Activity strings -->
+    <!-- Contact Activity -->
     <string name="contact_name">Posters</string>
     <string name="contact_phone">629470302</string>
     <string name="contact_email">jualas@jualas.es</string>
     <string name="contact_address">Princesa Street, 1, 28008 Madrid</string>
     <string name="abrir_whatsapp">Contact for WhatsApp</string>
-    <string name="toolbar_title">Posters App</string>
-    <string name="logo_description">Company Logo</string>
+
+    <!-- Snackbar messages -->
+    <!-- Snackbar -->
+    <string name="snackbar_text">Close</string>
+    <string name="snackbar_register">Welcome</string>
+    <string name="snackbar_forgot_password">Forgot Password</string>
+    <string name="snackbar_login">Logging in…</string>
+    <string name="snackbar_login_failed">Incorrect credentials</string>
+    <string name="snackbar_facebook">Sign in with Facebook</string>
+    <string name="snackbar_google">Sign in with Google</string>
+
+    <!-- Error messages -->
+    <!-- Errors -->
+    <string name="username_empty_error">Username cannot be empty</string>
+    <string name="password_empty_error">Password cannot be empty</string>
+
+    <!-- Item View strings -->
+    <!-- Item View -->
+    <string name="year">Year</string>
+    <string name="condition">Condition</string>
+    <string name="estimated_price">Estimated Price</string>
+    <string name="title_placeholder">Movie Title</string>
+    <string name="year_placeholder">Year: 1950</string>
+    <string name="condition_placeholder">Condition: Excellent</string>
+    <string name="price_placeholder">Estimated Price: $500</string>
+
+    <!-- Condition translations -->
+    <string name="condition_excellent">Excellent</string>
+    <string name="condition_good">Good</string>
+    <string name="condition_regular">Regular</string>
+
+    <!-- Movie Titles -->
+    <string name="movie_title_1">Movie A</string>
+    <string name="movie_title_2">Movie B</string>
+    <string name="movie_title_3">Movie C</string>
+    <string name="movie_title_4">Movie D</string>
+    <string name="movie_title_5">Movie E</string>
+
+    <string name="image_poster_description">Poster image</string>
 </resources>
