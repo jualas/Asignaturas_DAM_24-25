@@ -10,24 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5618acf4-795c-437c-b2b2-4904411178c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/es/jualas/magracontomate_1/scenes/todoprimos/requisitos" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../loteria-inicio/loteria-inicio/src/main/java/com/profesor/loteria/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../loteria-inicio/loteria-inicio/src/main/java/com/profesor/loteria/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../loteria-inicio/loteria-inicio/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../loteria-inicio/loteria-inicio/src/main/resources/com/profesor/loteria/MainView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../loteria-inicio/loteria-inicio/src/main/resources/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/MagraConTomateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/MagraConTomateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/RefritoMAgraConTomateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/RefritoMAgraConTomateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/SceneManagerAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/SceneManagerAware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/scenes/calculadora/Calculadora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/scenes/calculadora/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/scenes/calculadora/ManejadorBoton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/scenes/calculadoraFX/CalculadoraApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/jualas/magracontomate_1/scenes/calculadoraFX/CalculadoraApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/java/es/jualas/carteles/MainApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/java/es/jualas/carteles/MainApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/java/es/jualas/carteles/SplashScreenActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/res/drawable/splashscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/res/drawable/splashscreen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programacion_Multimedia_Dispositivos_Moviles/Carteles/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +40,12 @@
     &quot;assignee&quot;: &quot;jualas&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/jualas/Asignaturas_DAM_24-25.git&quot;,
-    &quot;accountId&quot;: &quot;842fa76f-457b-4181-bcc7-65586cd0dfff&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jualas/Asignaturas_DAM_24-25.git",
+    "accountId": "215be1b4-844a-461a-aced-3b54e77c0744"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -88,8 +77,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/juala/Asignaturas_DAM_24-25/Programacion_Servicios_Procesos/Conecta_3_Recurrente/Cliente",
+    "last_opened_file_path": "C:/Users/juala/OneDrive/Asignaturas_DAM_24-25/Desarrollo_de_Interfaces/loteria-inicio/loteria-inicio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,7 +88,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.1711092",
-    "settings.editor.selected.configurable": "preferences.language.and.region",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,7 +110,7 @@
       <recent name="es.jualas.magracontomate_1.scenes.login" />
     </key>
   </component>
-  <component name="RunManager" selected="Aplicación.RefritoMAgraConTomateApplication">
+  <component name="RunManager" selected="Application.RefritoMAgraConTomateApplication">
     <configuration name="RefritoMAgraConTomateApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.jualas.magracontomate_1.RefritoMAgraConTomateApplication" />
       <module name="MagraConTomate_1" />
@@ -198,6 +188,7 @@
       <workItem from="1733917546665" duration="60000" />
       <workItem from="1733917739997" duration="878000" />
       <workItem from="1733942014429" duration="51000" />
+      <workItem from="1736269115085" duration="1684000" />
     </task>
     <servers />
   </component>

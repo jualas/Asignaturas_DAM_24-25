@@ -2,12 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permisos necesarios para la aplicación -->
+    <!-- Permiso para realizar llamadas telefónicas -->
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- Permisos para acceder a la ubicación precisa y aproximada -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
+        <!-- Declaración de la característica de hardware de telefonía como opcional.
+         Esto permite que la aplicación se instale en dispositivos sin capacidades
+         de telefonía, como tablets o dispositivos sin tarjeta SIM. La aplicación
+         puede utilizar funciones de telefonía si están disponibles, pero no depende
+         de ellas para su funcionamiento principal, ampliando así su compatibilidad
+         y accesibilidad a una mayor variedad de dispositivos. -->
     <uses-feature android:name="android.hardware.telephony" android:required="false"/>
 
+    <!-- Configuración de la aplicación:
+     La etiqueta <application> define las propiedades globales de la aplicación,
+     incluyendo iconos, temas, y configuraciones de respaldo. Cada atributo dentro
+     de esta etiqueta afecta cómo se presenta y se comporta la aplicación en el
+     dispositivo del usuario. -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,18 +32,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Carteles"
         tools:targetApi="31">
-    <activity
-            android:name=".SplashScreenActivity"
+
+        <!-- Actividad principal que se muestra al iniciar la aplicación -->
+        <activity
+            android:name=".MainApp"
             android:theme="@style/Theme.Carteles.SplashScreen"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-    <activity android:name=".LoginActivity"/>
-    <activity android:name=".RVActivity"/>
-    <activity android:name=".ContactoActivity"/>
-</application>
+            <intent-filter>
+                <!-- Define esta actividad como el punto de entrada principal -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividades de la aplicación -->
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RVActivity"/>
+        <activity android:name=".ContactoActivity"/>
+    </application>
 
 </manifest>

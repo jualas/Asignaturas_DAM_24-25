@@ -3,24 +3,22 @@ package es.jualas.carteles
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-
 class MainApp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Restaura el tema principal
+        setTheme(R.style.Theme_Carteles)
         super.onCreate(savedInstanceState)
 
         // Lógica para decidir qué actividad mostrar
         val isUserLoggedIn = checkUserLoggedIn()
 
         if (isUserLoggedIn) {
-            // Si el usuario ya está autenticado, navega a la actividad principal
             startActivity(Intent(this, ContactoActivity::class.java))
         } else {
-            // Si el usuario no está autenticado, muestra la actividad de inicio de sesión
             startActivity(Intent(this, LoginActivity::class.java))
         }
 
-        // Finaliza MainApp para que no se quede en el stack de actividades
-        finish()
+        finish() // Cierra MainApp
     }
 
     private fun checkUserLoggedIn(): Boolean {

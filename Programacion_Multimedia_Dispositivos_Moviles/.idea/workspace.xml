@@ -1,53 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3510ae5c-d863-41ba-a7b5-6a06cde894f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Carteles/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/androidTest/java/es/jualas/carteles/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/java/es/jualas/carteles/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/app/src/test/java/es/jualas/carteles/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carteles/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurante/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurante/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ca3bf456-6613-4f3b-95d8-45b1490c950c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Desarrollo_de_Interfaces/MagraConTomate_1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desarrollo_de_Interfaces/MagraConTomate_1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Desarrollo_de_Interfaces/MagraConTomate_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Desarrollo_de_Interfaces/MagraConTomate_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carteles/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Carteles/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carteles/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Carteles/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carteles/app/src/main/java/es/jualas/carteles/MainApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Carteles/app/src/main/java/es/jualas/carteles/MainApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carteles/app/src/main/java/es/jualas/carteles/SplashScreenActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carteles/app/src/main/res/drawable/splashscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/drawable/splashscreen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Carteles/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Carteles/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\juala\.android\avd\Pixel_Fold_API_35.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -61,46 +46,94 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/jualas/Asignaturas_DAM_24-25.git&quot;,
-    &quot;accountId&quot;: &quot;842fa76f-457b-4181-bcc7-65586cd0dfff&quot;
+    &quot;accountId&quot;: &quot;215be1b4-844a-461a-aced-3b54e77c0744&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2okvBt3ZOXgQQ0QnLUoUJyUzNKm" />
+  <component name="ProjectId" id="2rSMIL7f3UdIRkMM0cj3aijYy56" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Android App.app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/juala/OneDrive",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Callos_Cartagenera.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3510ae5c-d863-41ba-a7b5-6a06cde894f7" name="Changes" comment="" />
-      <created>1731426257376</created>
+      <changelist id="ca3bf456-6613-4f3b-95d8-45b1490c950c" name="Changes" comment="" />
+      <created>1736547941911</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731426257376</updated>
-      <workItem from="1731426259409" duration="19000" />
-      <workItem from="1731426286467" duration="131000" />
+      <updated>1736547941911</updated>
+      <workItem from="1736547949303" duration="3619000" />
     </task>
     <servers />
   </component>
