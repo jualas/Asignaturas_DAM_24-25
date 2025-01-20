@@ -1,6 +1,9 @@
-# Carpetas de configuración de IntelliJ
+# Carpetas de configuración de IntelliJ y Android Studio
 .idea/
 *.iml
+.gradle/
+.externalNativeBuild/
+.cxx/
 
 # Carpetas de compilación
 out/
@@ -9,3 +12,18 @@ build/
 # Archivos temporales
 *.class
 *.log
+
+# Configuraciones locales de Android Studio
+local.properties
+
+# Archivos específicos de sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos generados de Android
+*.apk
+*.aar
+*.jar
+
+# Configuración de editores de texto
+.vscode/
