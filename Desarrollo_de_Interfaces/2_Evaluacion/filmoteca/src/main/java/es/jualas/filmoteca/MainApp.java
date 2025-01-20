@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -16,8 +17,13 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600); // Ajusta el tamaño de la escena aquí
+        stage.setTitle("Filmoteca");
+
+        // Establecer el icono de la aplicación
+        Image icon = new Image(getClass().getResourceAsStream("/es/jualas/filmoteca/logo.png"));
+        stage.getIcons().add(icon);
+
         stage.setScene(scene);
         stage.show();
     }
@@ -51,7 +57,7 @@ public class MainApp extends Application {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            objectMapper.writeValue(new File("datos/peliculas2.json"),listaPeliculas);
+            objectMapper.writeValue(new File("datos/peliculas.json"),listaPeliculas);
         }catch (IOException e) {
             System.out.println("ERROR no se ha podido guardar los datos de la aplicación");
             e.printStackTrace();
@@ -59,6 +65,3 @@ public class MainApp extends Application {
 
     }
 }
-
-
-

@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="es.jualas.filmoteca.MainController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<HBox prefHeight="579.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="es.jualas.filmoteca.MainController">
+    <children>
+        <TableView fx:id="peliculasTableView">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID"/>
+                <TableColumn fx:id="titleColumn" text="Title"/>
+                <TableColumn fx:id="yearColumn" text="Year"/>
+                <TableColumn fx:id="ratingColumn" text="Rating"/>
+            </columns>
+        </TableView>
+        <AnchorPane prefHeight="522.0" prefWidth="443.0">
+            <children>
+                <Label layoutX="100.0" layoutY="10.0" style="-fx-font-size: 24px; -fx-font-weight: bold;"
+                       text="FILMOTECA"/>
+
+                <Label layoutX="14.0" layoutY="50.0" text="Title:"/>
+                <TextField fx:id="titleTextField" layoutX="100.0" layoutY="50.0" promptText="Title"/>
+
+                <Label layoutX="14.0" layoutY="80.0" text="Year:"/>
+                <TextField fx:id="yearTextField" layoutX="100.0" layoutY="80.0" promptText="Year"/>
+
+                <Label layoutX="14.0" layoutY="110.0" text="Description:"/>
+                <TextArea fx:id="descriptionTextArea" layoutX="100.0" layoutY="110.0" prefHeight="100.0"
+                          prefWidth="200.0"/>
+
+                <Label layoutX="14.0" layoutY="220.0" text="Rating:"/>
+                <Slider fx:id="ratingSlider" layoutX="100.0" layoutY="220.0" majorTickUnit="1" max="10" min="0" showTickLabels="true" showTickMarks="true" blockIncrement="0.1"/>
+                <TextField fx:id="ratingTextField" layoutX="250.0" layoutY="220.0" editable="false"/>
+
+                <Label layoutX="14.0" layoutY="260.0" text="Poster URL:"/>
+                <TextField fx:id="posterUrlTextField" layoutX="100.0" layoutY="260.0" onAction="#onPosterUrlEntered"/>
+
+                <ImageView fx:id="posterImageView" fitHeight="200.0" fitWidth="150.0" layoutX="100.0" layoutY="300.0"/>
+
+                <Button layoutX="100.0" layoutY="510.0" onAction="#onAddMovieClick" text="Add Movie"/>
+                <Button layoutX="200.0" layoutY="510.0" onAction="#onEditMovieClick" text="Edit Movie"/>
+                <Button layoutX="300.0" layoutY="510.0" onAction="#onDeleteMovieClick" text="Delete Movie"/>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
