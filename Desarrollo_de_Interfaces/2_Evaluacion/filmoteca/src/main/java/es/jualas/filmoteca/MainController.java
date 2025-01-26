@@ -1,6 +1,5 @@
 package es.jualas.filmoteca;
 
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -19,103 +18,89 @@ public class MainController {
     @FXML
     private TableColumn<Pelicula, Float> ratingColumn;
     @FXML
-    private TextField titleTextField;
+    private ImageView posterImageView;
+
     @FXML
-    private TextField yearTextField;
+    private Label titleLabel;
+    @FXML
+    private Label yearLabel;
     @FXML
     private TextArea descriptionTextArea;
     @FXML
-    private Slider ratingSlider;
-    @FXML
-    private TextField ratingTextField;
-    @FXML
-    private TextField posterUrlTextField;
-    @FXML
-    private ImageView posterImageView;
+    private Label ratingLabel;
 
+    @FXML
+    public void initialize() {
+        // Configurar las columnas en la tabla con las propiedades de la clase Pelicula
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+        titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
+        yearColumn.setCellValueFactory(new PropertyValueFactory<>("year"));
+        ratingColumn.setCellValueFactory(new PropertyValueFactory<>("rating"));
 
-@FXML
-public void initialize() {
-    // Configurar las columnas en la tabla
-    idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-    titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
-    yearColumn.setCellValueFactory(new PropertyValueFactory<>("year"));
-    ratingColumn.setCellValueFactory(new PropertyValueFactory<>("rating"));
-
-    // Formatear la columna de rating para mostrar solo un decimal
-    ratingColumn.setCellFactory(column -> new TableCell<Pelicula, Float>() {
-        @Override
-        protected void updateItem(Float item, boolean empty) {
-            super.updateItem(item, empty);
-            if (empty || item == null) {
-                setText(null);
-            } else {
-                setText(String.format("%.1f", item));
+        // Formatear la columna de rating para mostrar solo un decimal
+        ratingColumn.setCellFactory(column -> new TableCell<>() {
+            @Override
+            protected void updateItem(Float item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                } else {
+                    setText(String.format("%.1f", item));
+                }
             }
-        }
-    });
+        });
 
-    // Cargar datos
-    peliculasTableView.setItems(DatosFilmoteca.getInstancia().getListaPeliculas());
+        // Cargar datos en la tabla desde la lista de películas
+        DatosFilmoteca.getInstancia();
+        peliculasTableView.setItems(DatosFilmoteca.getListaPeliculas());
 
-    // Añadir listener para actualizar los campos cuando se seleccione una película
-    peliculasTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-        if (newValue != null) {
-            titleTextField.setText(newValue.getTitle());
-            yearTextField.setText(String.valueOf(newValue.getYear()));
-            descriptionTextArea.setText(newValue.getDescription());
-            ratingSlider.setValue(newValue.getRating());
-            posterUrlTextField.setText(newValue.getPoster());
-            posterImageView.setImage(new Image(newValue.getPoster()));
-            ratingTextField.setText(String.format("%.1f", newValue.getRating()));
-        }
-    });
-
-    // Añadir listener para actualizar el campo de texto con el valor del slider
-    ratingSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
-        ratingTextField.setText(String.format("%.1f", newValue.floatValue()));
-    });
-}
-
-    @FXML
-    protected void onPosterUrlEntered() {
-        String url = posterUrlTextField.getText();
-        if (url != null && !url.isEmpty()) {
-            Image image = new Image(url);
-            posterImageView.setImage(image);
-        }
+        // Añadir listener para actualizar los campos cuando se seleccione una película
+        peliculasTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                titleLabel.setText(newValue.getTitle());
+                yearLabel.setText(String.valueOf(newValue.getYear()));
+                descriptionTextArea.setText(newValue.getDescription());
+                ratingLabel.setText(String.format("%.1f", newValue.getRating()));
+                posterImageView.setImage(new Image(newValue.getPoster()));
+            }
+        });
     }
 
     @FXML
     protected void onAddMovieClick() {
-        String title = titleTextField.getText();
-        int year = Integer.parseInt(yearTextField.getText());
+        // Añadir una nueva película a la lista
+        String title = titleLabel.getText();
+        int year = Integer.parseInt(yearLabel.getText());
         String description = descriptionTextArea.getText();
-        float rating = (float) ratingSlider.getValue();
-        String poster = posterUrlTextField.getText();
+        float rating = Float.parseFloat(ratingLabel.getText());
+        String poster = ""; // Poster URL is not being set from the UI
 
         Pelicula pelicula = new Pelicula(0, title, year, description, rating, poster);
-        DatosFilmoteca.getInstancia().getListaPeliculas().add(pelicula);
+        DatosFilmoteca.getInstancia();
+        DatosFilmoteca.getListaPeliculas().add(pelicula);
     }
 
     @FXML
     protected void onEditMovieClick() {
+        // Editar la película seleccionada en la lista
         Pelicula selectedMovie = peliculasTableView.getSelectionModel().getSelectedItem();
         if (selectedMovie != null) {
-            selectedMovie.setTitle(titleTextField.getText());
-            selectedMovie.setYear(Integer.parseInt(yearTextField.getText()));
+            selectedMovie.setTitle(titleLabel.getText());
+            selectedMovie.setYear(Integer.parseInt(yearLabel.getText()));
             selectedMovie.setDescription(descriptionTextArea.getText());
-            selectedMovie.setRating((float) ratingSlider.getValue());
-            selectedMovie.setPoster(posterUrlTextField.getText());
+            selectedMovie.setRating(Float.parseFloat(ratingLabel.getText()));
+            // Poster URL is not being set from the UI
             peliculasTableView.refresh();
         }
     }
 
     @FXML
     protected void onDeleteMovieClick() {
+        // Eliminar la película seleccionada de la lista
         Pelicula selectedMovie = peliculasTableView.getSelectionModel().getSelectedItem();
         if (selectedMovie != null) {
-            DatosFilmoteca.getInstancia().getListaPeliculas().remove(selectedMovie);
+            DatosFilmoteca.getInstancia();
+            DatosFilmoteca.getListaPeliculas().remove(selectedMovie);
         }
     }
 }

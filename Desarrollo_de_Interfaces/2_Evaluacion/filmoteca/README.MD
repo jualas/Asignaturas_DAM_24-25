@@ -9,9 +9,11 @@ Filmoteca es una aplicación JavaFX para gestionar una colección de películas.
 - **Correo de Alumno**: 3850437@alu.murciaeduca.es
 - **Página Personal**: [jualas.es](http://jualas.es)
 
-## Captura de Pantalla
+## Capturas de Pantallas
 
-![Captura de Pantalla](ruta/a/la/captura.png)
+![Capture de Pantalla](src/main/resources/es/jualas/filmoteca/img.png)
+
+![Capture de Pantalla](src/main/resources/es/jualas/filmoteca/img_1.png)
 
 ## Requisitos
 
