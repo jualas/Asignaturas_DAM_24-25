@@ -1,7 +1,13 @@
 package es.jualas.filmoteca;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
 
 public class DatosFilmoteca {
 
@@ -33,5 +39,20 @@ public class DatosFilmoteca {
     // Método para establecer la lista observable de películas
     public static void setListaPeliculas(ObservableList<Pelicula> listaPeliculas) {
         DatosFilmoteca.listaPeliculas = listaPeliculas;
+    }
+
+    // Método para guardar la lista de películas en un archivo JSON
+    public void guardarDatos() {
+        List<Pelicula> listaPeliculas = getListaPeliculas();
+        ObjectMapper objectMapper = new ObjectMapper();
+        File file = new File("datos/peliculas.json");
+
+        file.getParentFile().mkdirs();
+
+        try (FileWriter writer = new FileWriter(file)) {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(writer, listaPeliculas);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

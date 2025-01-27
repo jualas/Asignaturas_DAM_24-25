@@ -17,10 +17,10 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 600); // Ajusta el tamaño de la escena aquí
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("Filmoteca");
 
-        // Establecer el icono de la aplicación
+        // Establece el icono de la aplicación
         Image icon = new Image(getClass().getResourceAsStream("/es/jualas/filmoteca/logo.png"));
         stage.getIcons().add(icon);
 
@@ -48,7 +48,7 @@ public class MainApp extends Application {
             System.exit(1);
         }
 
-        System.out.println(datosFilmoteca.getListaPeliculas());
+
     }
 
     public void stop() {

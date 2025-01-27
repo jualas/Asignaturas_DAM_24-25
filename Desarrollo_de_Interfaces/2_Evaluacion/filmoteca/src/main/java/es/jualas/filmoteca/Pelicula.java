@@ -43,7 +43,7 @@ public class Pelicula {
     }
 
     // Setter privado para el ID de la película
-    private void setId(int id) {
+    void setId(int id) {
         this.id.set(id);
     }
 
