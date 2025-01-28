@@ -24,5 +24,5 @@ Filmoteca es una aplicación JavaFX para gestionar una colección de películas.
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/filmoteca.git
+   git clone https://github.com/jualas/Asignaturas_DAM_24-25/tree/main/Desarrollo_de_Interfaces/2_Evaluacion/filmoteca
    cd filmoteca
